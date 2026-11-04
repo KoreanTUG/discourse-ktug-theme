@@ -32,3 +32,139 @@ h1, h2, h3, h4, h5, h6 {
 body:not(.staff) .sidebar-section[data-section-name="community"] {
   display: none;
 }
+
+// ── 첫 화면(javascripts/discourse/api-initializers/ktug-home.gjs) ──────────
+// KTUG 사이트 메인 화면과 같은 파란 그라데이션 환영 영역과 '주요 서비스' 카드 모양
+
+// TeX 로고(사이트 _sass/_base.scss와 같은 방식)
+.tex-logo {
+  white-space: nowrap;
+
+  .tex-logo-e {
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: -0.5ex;
+    line-height: 0;
+    margin: 0 -0.125em 0 -0.1667em;
+  }
+}
+
+.ktug-home {
+  margin: 1rem 0 1.75rem;
+}
+
+.ktug-hero {
+  background: linear-gradient(135deg, #1a6fb0 0%, #2589d6 100%);
+  border-radius: 8px;
+  padding: 2.75rem 1.5rem 2.25rem;
+  text-align: center;
+  color: #fff;
+
+  &__title {
+    margin: 0 0 0.5rem;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  &__lead {
+    margin: 0 0 1.4rem;
+    font-size: 1.15rem;
+    opacity: 0.95;
+  }
+
+  &__search {
+    max-width: 36rem;
+    margin: 0 auto;
+
+    input[type="search"] {
+      width: 100%;
+      margin: 0;
+      padding: 0.65rem 1rem;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      font-size: 1rem;
+    }
+  }
+}
+
+.ktug-boards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.ktug-board {
+  display: block;
+  padding: 1.4rem 1.5rem;
+  border-top: 4px solid var(--board-color);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: var(--primary);
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    color: var(--primary);
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 0.6rem;
+    color: var(--tertiary);
+    font-size: 1.35rem;
+  }
+
+  p {
+    margin: 0 0 0.8rem;
+    color: var(--primary-medium);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  &__icon {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: rgba(26, 111, 176, 0.1);
+    color: var(--tertiary);
+
+    svg {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
+
+  &__more {
+    color: var(--tertiary);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+// 좁은 화면: 카드를 위아래로 쌓고 환영 영역을 줄인다
+@media (max-width: 768px) {
+  .ktug-hero {
+    padding: 2rem 1rem 1.75rem;
+
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    &__lead {
+      font-size: 1rem;
+    }
+  }
+
+  .ktug-boards {
+    grid-template-columns: 1fr;
+  }
+}
