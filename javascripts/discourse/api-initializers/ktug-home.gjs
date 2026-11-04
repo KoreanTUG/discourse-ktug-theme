@@ -11,19 +11,19 @@ const BOARDS = [
   {
     slug: "ktug",
     name: "KTUG 마당",
-    description: "TeX과 KTUG에 관한 소식과 정보를 나눕니다.",
+    description: "TeX과 KTUG 관련 소식과 정보를 나눕니다.",
     icon: `<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"/><path d="M8 6v8"/></svg>`,
   },
   {
     slug: "qna",
     name: "Q&A 마당",
-    description: "TeX 관련 질문과 답변을 나눕니다.",
+    description: "TeX을 사용하며 궁금한 점을 묻고 답합니다.",
     icon: `<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>`,
   },
   {
     slug: "faq",
     name: "FAQ 마당",
-    description: "TeX과 관련된 자주 묻는 질문과 답변을 나눕니다.",
+    description: "TeX 관련 자주 묻는 질문과 답변을 모읍니다.",
     icon: `<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/></svg>`,
   },
 ];
