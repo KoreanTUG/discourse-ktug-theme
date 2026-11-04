@@ -1,0 +1,20 @@
+{
+  "name": "KTUG",
+  "about_url": "https://github.com/KoreanTUG/ktug-main-site",
+  "license_url": null,
+  "component": false,
+  "color_schemes": {
+    "KTUG": {
+      "primary": "333333",
+      "secondary": "ffffff",
+      "tertiary": "1a6fb0",
+      "quaternary": "1a6fb0",
+      "header_background": "ffffff",
+      "header_primary": "2c3e50",
+      "highlight": "fff3b0",
+      "danger": "e74c3c",
+      "success": "2e7d32",
+      "love": "e74c3c"
+    }
+  }
+}

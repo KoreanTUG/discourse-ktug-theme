@@ -1,0 +1,28 @@
+// KTUG 사이트(koreantug.github.io/ktug-main-site)와 같은 글꼴, 헤더 모양
+// 색은 about.json의 색 구성 "KTUG"에 있다(사이트 _sass/_variables.scss와 같은 값)
+
+// 글꼴: 사이트의 $font-family-base와 같은 목록
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji",
+    "Segoe UI Emoji", "Noto Color Emoji", "Noto Sans KR", "Malgun Gothic", "맑은 고딕",
+    "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;
+  --heading-font-family: var(--font-family);
+  // 가로 로고(로고 + 사이트 이름)가 읽히도록 기본보다 조금 크게
+  --d-logo-height: 2.8em;
+}
+
+body {
+  font-family: var(--font-family);
+  word-break: keep-all; // 사이트와 같이 한글은 낱말 단위로 줄바꿈
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+}
+
+// 헤더: 사이트 헤더처럼 흰 바탕에 옅은 아래 테두리와 그림자
+.d-header {
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
