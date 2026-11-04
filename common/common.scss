@@ -26,3 +26,9 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
+// 메뉴의 커뮤니티 영역(글, Boards, 더 보기)을 운영진이 아닌 사용자에게 숨긴다
+// 운영진(body.staff)에게는 '관리자' 링크가 이 영역에 있으므로 남겨 둔다
+body:not(.staff) .sidebar-section[data-section-name="community"] {
+  display: none;
+}
