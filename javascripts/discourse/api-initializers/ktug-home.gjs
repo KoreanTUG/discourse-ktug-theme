@@ -91,5 +91,6 @@ class KtugHome extends Component {
 }
 
 export default apiInitializer("1.8.0", (api) => {
-  api.renderInOutlet("discovery-list-container-top", KtugHome);
+  // 상단 탭(list-controls) 바로 앞. 시안처럼 환영 영역이 탭 위에 오게 한다
+  api.renderInOutlet("discovery-list-controls-above", KtugHome);
 });
