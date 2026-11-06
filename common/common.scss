@@ -118,3 +118,7 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
 .sidebar-section-link-wrapper[data-list-item-name="all-categories"] {
   display: none; // 사이드바 '모든 카테고리'
 }
+
+.list-controls #navigation-bar {
+  display: none; // '최신' 탭(데스크톱)과 '최신' 메뉴(모바일). top menu가 latest 하나뿐이다. 새 글 버튼은 따로 있어 그대로 보인다
+}
