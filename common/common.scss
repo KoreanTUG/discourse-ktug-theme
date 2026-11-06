@@ -34,7 +34,7 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
 }
 
 // ── 첫 화면(javascripts/discourse/api-initializers/ktug-home.gjs) ──────────
-// KTUG 사이트 메인 화면과 같은 파란 그라데이션 환영 영역과 '주요 서비스' 카드 모양
+// KTUG 사이트 메인 화면과 같은 파란 그라데이션 환영 영역
 
 // TeX 로고(사이트 _sass/_base.scss와 같은 방식)
 .tex-logo {
@@ -89,68 +89,7 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
   }
 }
 
-.ktug-boards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-top: 1.5rem;
-}
-
-.ktug-board {
-  display: block;
-  padding: 1.4rem 1.5rem;
-  border-top: 4px solid var(--board-color);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  color: var(--primary);
-
-  &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    color: var(--primary);
-  }
-
-  h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin: 0 0 0.6rem;
-    color: var(--tertiary);
-    font-size: 1.35rem;
-  }
-
-  p {
-    margin: 0 0 0.8rem;
-    color: var(--primary-medium);
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  &__icon {
-    display: inline-flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 50%;
-    background: rgba(26, 111, 176, 0.1);
-    color: var(--tertiary);
-
-    svg {
-      width: 1.3rem;
-      height: 1.3rem;
-    }
-  }
-
-  &__more {
-    color: var(--tertiary);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-}
-
-// 좁은 화면: 카드를 위아래로 쌓고 환영 영역을 줄인다
+// 좁은 화면: 환영 영역을 줄인다
 @media (max-width: 768px) {
   .ktug-hero {
     padding: 2rem 1rem 1.75rem;
@@ -162,9 +101,5 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
     &__lead {
       font-size: 1rem;
     }
-  }
-
-  .ktug-boards {
-    grid-template-columns: 1fr;
   }
 }
