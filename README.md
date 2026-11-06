@@ -1,6 +1,6 @@
 # discourse-ktug-theme
 
-한글텍사용자모임(KTUG) 포럼(Discourse)을 [KTUG 사이트](https://koreantug.github.io/ktug-main-site/)와 같은 색, 글꼴, 로고로 맞추는 테마.
+한글텍사용자모임(KTUG) 포럼(Discourse)을 [KTUG 사이트](https://www.ktug.org/)와 같은 색, 글꼴, 로고로 맞추는 테마.
 
 - `about.json`: 테마 정보와 색 구성 "KTUG"(사이트 `_sass/_variables.scss`와 같은 색)
 - `common/common.scss`: 글꼴, 헤더, 메뉴 정리, 첫 화면 스타일
