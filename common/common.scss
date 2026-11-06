@@ -137,26 +137,28 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
 
 // ── 머리글 '메인 사이트' 링크(javascripts/discourse/api-initializers/ktug-main-site-link.gjs) ──
 .ktug-main-site-link {
-  a.icon {
-    display: inline-flex;
-    align-items: center;
+  // Discourse 머리글 아이콘(.d-header-icons .icon)은 너비가 고정(2.2857em)이라 글자가 넘친다. 이 링크만 너비를 풀어 준다
+  .d-header-icons & a.icon {
+    width: auto;
     gap: 0.35em;
-    color: var(--header_primary-medium);
+    padding: 0.2143em 0.6em;
+    color: var(--d-header-icon-color);
 
     &:hover,
     &:focus-visible {
-      color: var(--header_primary);
+      color: var(--d-header-icon-color--hover);
       text-decoration: none;
     }
   }
 
   &__icon {
-    width: 1.25em;
-    height: 1.25em;
+    flex-shrink: 0;
+    width: 1.5em;
+    height: 1.5em;
   }
 
   &__label {
-    font-size: var(--font-down-1);
+    font-size: var(--font-0);
     white-space: nowrap;
   }
 }
@@ -165,5 +167,9 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
 @media (max-width: 768px) {
   .ktug-main-site-link__label {
     display: none;
+  }
+
+  .d-header-icons .ktug-main-site-link a.icon {
+    padding: 0.2143em;
   }
 }
