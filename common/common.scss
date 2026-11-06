@@ -110,8 +110,9 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
   display: none; // 목록 위 '카테고리 >', '태그 >' 드롭다운
 }
 
-.topic-list .link-bottom-line {
-  display: none; // 글 제목 아래 'KTUG 마당' 표시(태그를 쓰지 않아 이 줄에 다른 내용이 없다)
+.topic-list .link-bottom-line,
+.topic-list .topic-item-stats__category-tags {
+  display: none; // 글 제목 아래 'KTUG 마당' 표시(데스크톱, 모바일). 태그를 쓰지 않아 다른 내용이 없다
 }
 
 .sidebar-section-link-wrapper[data-list-item-name="all-categories"] {
