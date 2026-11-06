@@ -60,6 +60,18 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
   text-align: center;
   color: #fff;
 
+  // 사이트 제목(KTUG 마당). 단체 이름 위에 작은 꼬리표로 둔다
+  &__eyebrow {
+    display: inline-block;
+    margin: 0 0 0.75rem;
+    padding: 0.2rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
   &__title {
     margin: 0 0 0.5rem;
     color: #fff;

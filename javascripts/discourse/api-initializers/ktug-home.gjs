@@ -1,4 +1,4 @@
-// KTUG 첫 화면: 파란 환영 영역(사이트 이름, 소개 문구, 검색).
+// KTUG 첫 화면: 파란 환영 영역(게시판 이름 'KTUG 마당', 단체 이름, 소개 문구, 검색).
 // 최신 글 첫 화면(discovery.latest)에서만 보인다. Discourse 기본 환영 배너는 설정(enable welcome banner)에서 끈다.
 // 공개 게시판이 KTUG 마당 하나뿐이라(2026-11-06 통합) 게시판 카드는 두지 않는다.
 import Component from "@glimmer/component";
@@ -16,11 +16,12 @@ class KtugHome extends Component {
     {{#if this.show}}
       <section class="ktug-home">
         <div class="ktug-hero">
+          <p class="ktug-hero__eyebrow">KTUG 마당</p>
           <h1 class="ktug-hero__title">한글
             <span class="tex-logo" role="img" aria-label="TeX">T<span
                 class="tex-logo-e"
               >e</span>X</span>
-            사용자 모임 커뮤니티</h1>
+            사용자 모임</h1>
           <p class="ktug-hero__lead"><span
               class="tex-logo"
               role="img"
