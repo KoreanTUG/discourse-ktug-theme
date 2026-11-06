@@ -20,7 +20,7 @@ class KtugHome extends Component {
             <span class="tex-logo" role="img" aria-label="TeX">T<span
                 class="tex-logo-e"
               >e</span>X</span>
-            사용자 모임</h1>
+            사용자 모임 커뮤니티</h1>
           <p class="ktug-hero__lead"><span
               class="tex-logo"
               role="img"

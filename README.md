@@ -4,6 +4,7 @@
 
 - `about.json`: 테마 정보와 색 구성 "KTUG"(사이트 `_sass/_variables.scss`와 같은 색)
 - `common/common.scss`: 글꼴, 헤더, 메뉴 정리, 첫 화면 스타일
+- `javascripts/discourse/api-initializers/ktug-main-site-link.gjs`: 머리글의 '메인 사이트' 링크(주소는 테마 설정 `main_site_url`, `settings.yml`)
 - `javascripts/discourse/api-initializers/ktug-home.gjs`: 첫 화면(최신 글)의 파란 환영 영역(사이트 이름, 소개 문구, 검색)
   - 함께 바꿀 설정: `enable welcome banner` 끄기, `top menu`에서 `latest`를 맨 앞으로 모양
 - `branding/`: 관리자 → 브랜딩에 올리는 로고 이미지(테마에 포함되지 않는다)
