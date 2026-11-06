@@ -103,3 +103,17 @@ body:not(.staff) .sidebar-section[data-section-name="community"] {
     }
   }
 }
+
+// ── 게시판이 KTUG 마당 하나뿐이라(2026-11-06 통합) 게시판 고르기와 게시판 표시를 숨긴다 ──
+// 함께 바꾼 관리자 설정: top menu = latest(카테고리 탭 없음), tagging enabled 끔(태그 드롭다운 없음)
+.category-breadcrumb {
+  display: none; // 목록 위 '카테고리 >', '태그 >' 드롭다운
+}
+
+.topic-list .link-bottom-line {
+  display: none; // 글 제목 아래 'KTUG 마당' 표시(태그를 쓰지 않아 이 줄에 다른 내용이 없다)
+}
+
+.sidebar-section-link-wrapper[data-list-item-name="all-categories"] {
+  display: none; // 사이드바 '모든 카테고리'
+}
